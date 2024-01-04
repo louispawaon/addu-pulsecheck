@@ -1,5 +1,5 @@
 import React from 'react'
-import { WebsiteType } from '@/lib/types/WebsiteType'
+import type { WebsiteType } from '@/lib/types/WebsiteType'
 import {
     Card,
     CardContent,
@@ -9,25 +9,26 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
-interface WebsiteCardProps {
-    websites: WebsiteType
+type WebsiteCardProps = WebsiteType & {
+    status: string;
 }
 
-function WebsiteCard({}: WebsiteType) {
-  return (
-    <Card>
-    <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-    </CardHeader>
-    <CardContent>
-        <p>Card Content</p>
-    </CardContent>
-    <CardFooter>
-        <p>Card Footer</p>
-    </CardFooter>
-    </Card>
-  )
-}
+const WebsiteCard: React.FC<WebsiteCardProps> = ({websiteName, websiteDescription, websiteUrl, websiteThumbnail, status}) => {
 
+    return (
+        <Card>
+        <CardHeader>
+            <CardTitle>{websiteName}</CardTitle>
+            <CardDescription>{websiteDescription}</CardDescription>
+        </CardHeader>
+        <CardContent>
+            <p>{websiteUrl}</p>
+        </CardContent>
+        <CardFooter>
+            <p>Status: {status}</p>
+        </CardFooter>
+        </Card>
+      )
+  };
 export default WebsiteCard
+
