@@ -4,5 +4,6 @@ export type WebsiteType = {
     websiteName: string;
     websiteDescription: string;
     websiteUrl: string;
+    proxyUrl: string;
     websiteThumbnail?: StaticImageData;
 }
