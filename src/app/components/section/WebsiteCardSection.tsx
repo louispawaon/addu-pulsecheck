@@ -3,21 +3,12 @@
 import React, { FC, useState, useEffect } from 'react'
 import WebsiteCard from '@/app/components/ui/WebsiteCard';
 import { WebsiteData } from '@/data/WebsiteData';
-import { checkWebsiteStatus } from '@/services/WebsiteStatusChecker';
+import { useWebsiteStatusChecker } from '@/services/WebsiteStatusChecker';
 
 const WebsiteCardSection: FC = () => {
 
-    const [statuses, setStatuses] = useState<string[]>(Array(WebsiteData.length).fill('Checking...'));
-
-  useEffect(() => {
-    const checkAllWebsites = async () => {
-      const newStatuses = await Promise.all(WebsiteData.map(checkWebsiteStatus));
-      setStatuses(newStatuses);
-    };
-
-    checkAllWebsites();
-  }, []);
-
+  const statuses = useWebsiteStatusChecker(WebsiteData);
+      
     return (
         <section className="website-section">
           <h2>Ateneo de Davao University Websites</h2>
