@@ -29,7 +29,9 @@ const FooterIcons = () => {
         <TooltipProvider>
         <Tooltip>
             <TooltipTrigger>
-                <FaBug className="text-white text-2xl" />
+                <Link href="https://github.com/louispawaon/addu-pulsecheck/issues">
+                    <FaBug className="text-white text-2xl" />
+                </Link>
             </TooltipTrigger>
             <TooltipContent>
             <p>Report a Bug</p>
@@ -41,7 +43,9 @@ const FooterIcons = () => {
         <TooltipProvider>
         <Tooltip>
             <TooltipTrigger>
-                <FaQuestionCircle className="text-white text-2xl" />
+                <Link href="/faq">
+                    <FaQuestionCircle className="text-white text-2xl" />
+                </Link>
             </TooltipTrigger>
             <TooltipContent>
             <p>Frequently Asked Questions</p>
