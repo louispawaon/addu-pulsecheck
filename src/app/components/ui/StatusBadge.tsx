@@ -1,3 +1,4 @@
+import { nunito_sans } from '@/app/styles/fonts';
 import React from 'react'
 
 interface StatusBadgeProps {
@@ -8,17 +9,19 @@ interface StatusBadgeProps {
     const getStatusColor = () => {
       switch (status.toLowerCase()) {
         case 'online':
-          return 'bg-green-500';
+            return 'bg-green-500 text-green-800';
         case 'offline':
-          return 'bg-red-500';
+            return 'bg-red-500 text-red-800';
+        case 'error':
+            return 'bg-red-500 text-red-800';
         default:
-          return 'bg-gray-500';
+            return 'bg-orange-500 text-grey-800';
       }
     };
   
     return (
       <span
-        className={`inline-block px-2 py-1 text-white rounded-full ${getStatusColor()}`}
+        className={`ml-1 mt-1 w-fit text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full ${getStatusColor()} ${nunito_sans.variable} font-semibold`}
       >
         {status}
       </span>
