@@ -13,9 +13,17 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { 
+        'custom1':{'min':'1024px', 'max':'1280px'},
+        'mobile_S':'320px',
+        'mobile_M':'375px',
+        'mobile_L':'425px',
+        'sm': {'max':'768px'},
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
     },
     extend: {
       colors: {
