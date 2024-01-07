@@ -1,4 +1,3 @@
-import FAQAccordionSection from '@/app/components/section/FAQAccordionSection'
 import WebsiteCardSection from '@/app/components/section/WebsiteCardSection'
 
 export default function Home() {
