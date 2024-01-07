@@ -1,4 +1,3 @@
-// .storybook/WebsiteCardSection.stories.tsx
 import type { Meta, StoryObj } from '@storybook/react';
 import WebsiteCardSection from '@/app/components/section/WebsiteCardSection';
 
