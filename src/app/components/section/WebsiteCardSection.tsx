@@ -11,8 +11,7 @@ const WebsiteCardSection: FC = () => {
       
     return (
         <section className="website-section">
-          <h2>Ateneo de Davao University Websites</h2>
-          <div className="card-container">
+          <div className="flex flex-col gap-4 card-container p-4 ">
             {WebsiteData.map((website, index) => (
               <WebsiteCard key={index} {...website} status={statuses[index]}/>
             ))}
