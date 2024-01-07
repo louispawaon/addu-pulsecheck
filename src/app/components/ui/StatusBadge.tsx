@@ -15,7 +15,7 @@ interface StatusBadgeProps {
         case 'error':
             return 'bg-red-500 text-red-800';
         default:
-            return 'bg-orange-500 text-grey-800';
+            return 'bg-orange-500 text-orange-800';
       }
     };
   
