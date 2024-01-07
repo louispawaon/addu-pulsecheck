@@ -10,5 +10,5 @@ export default meta;
 type Story = StoryObj<typeof WebsiteCard>;
 
 export const Primary: Story = {
-  render: () => <WebsiteCard proxyUrl='' websiteDescription='' websiteName='' websiteUrl='' status=''/>,
+  render: () => <WebsiteCard proxyUrl='lorem ipsum' websiteDescription='lorem lorem' websiteName='lorem loren' websiteUrl='lorem@lorem' status='lorem'/>,
 };
