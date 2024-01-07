@@ -3,7 +3,7 @@ import type { WebsiteType } from "@/lib/types/WebsiteType";
 export const WebsiteData: WebsiteType[] = [
     {
         websiteName: "Ateneo de Davao University Main Website",
-        websiteDescription: "The official website of Ateneo de Davao University",
+        websiteDescription: "The official website of Ateneo de Davao University.",
         websiteUrl: "https://www.addu.edu.ph/",
         proxyUrl: "https://corsproxy.io/?https://www.addu.edu.ph/"
     },
@@ -30,5 +30,17 @@ export const WebsiteData: WebsiteType[] = [
         websiteDescription: "Student Information System for Ateneo de Davao University's higher education unit.",
         websiteUrl: "https://sis2.addu.edu.ph/",
         proxyUrl: "https://corsproxy.io/?https://sis2.addu.edu.ph/"
+    },
+    {
+        websiteName: "Atenews",
+        websiteDescription: "The official student publication of the Ateneo de Davao University.",
+        websiteUrl: "https://atenews.ph/",
+        proxyUrl: "https://corsproxy.io/?https://atenews.ph/"
+    },
+    {
+        websiteName: "SAMAHAN Official Website",
+        websiteDescription: "The official website of the Ateneo de Davao University's Student Government.",
+        websiteUrl: "https://samahan.addu.edu.ph/",
+        proxyUrl: "https://corsproxy.io/?https://samahan.addu.edu.ph/"
     },
 ]
