@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
-import Navbar from './components/ui/Navbar'
-import Footer from './components/ui/Footer'
+import { Analytics } from '@vercel/analytics/react'
+import Navbar from '@/app/components/ui/Navbar'
+import Footer from '@/app/components/ui/Footer'
 
 export const metadata: Metadata = {
   title: 'PulseCheck',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           <Navbar/>
           {children}
+          <Analytics/>
           <Footer/>
         </ThemeProvider>
       </body>
