@@ -43,4 +43,10 @@ export const WebsiteData: WebsiteType[] = [
         websiteUrl: "https://samahan.addu.edu.ph/",
         proxyUrl: "https://corsproxy.io/?https://samahan.addu.edu.ph/"
     },
+    {
+        websiteName: "AdDU Insite",
+        websiteDescription: "Get the latest memoranda, announcements, and updates from ADDU Insite using your ADDU G-Suite Account.",
+        websiteUrl: "https://insite.addu.edu.ph/",
+        proxyUrl: "https://corsproxy.io/?https://insite.addu.edu.ph/"
+    },
 ]
